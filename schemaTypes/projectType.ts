@@ -59,5 +59,11 @@ export const projectType = defineType({
       title: 'Created Date',
       type: 'datetime',
     }),
+    defineField({
+      name: 'techStacks',
+      title: 'Tech Stack',
+      type: 'array',
+      of: [{type: 'string'}],
+    }),
   ],
 })
