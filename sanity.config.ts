@@ -4,8 +4,6 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 import {codeInput} from '@sanity/code-input'
 import {colorInput} from '@sanity/color-input'
-import {media} from 'sanity-plugin-media'
-
 
 export default defineConfig({
   name: 'default',
@@ -14,7 +12,7 @@ export default defineConfig({
   projectId: 'qz844ghj',
   dataset: 'production',
 
-  plugins: [structureTool(), visionTool(), codeInput(), colorInput(), media()],
+  plugins: [structureTool(), visionTool(), codeInput(), colorInput()],
 
   schema: {
     types: schemaTypes,
