@@ -53,6 +53,9 @@ export const blogType = defineType({
         {
           type: 'code',
         },
+        {
+          type: 'h1'
+        }
       ],
     }),
     defineField({
